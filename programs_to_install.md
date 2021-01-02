@@ -35,9 +35,11 @@
 - Steam
 - vim
 - Zulip
+- [Obsidian](https://obsidian.md/)
+- [Latexmk](https://mg.readthedocs.io/latexmk.html)
 
 
-# Programs to Install with snap
+## Programs to Install with snap
 
 - GIMP
 - Inkscape
@@ -47,6 +49,11 @@
 - Spotify
 - Zulip
 - cheat
+
+## Programs to install with care
+
+- NVIDIA Drivers
+- [Bazel](https://docs.bazel.build/versions/master/install.html)
 
 ## Programs on Favorites Sidebar
 

@@ -10,6 +10,8 @@ Checklist and guide on how to migrate to a clean install of Ubuntu
    - Manually copy all files desired to a segment of the external hard drive
 * Make a list of all software to reinstall
    - Only restore files, not applications
+* Backup all fonts
+   - Under `/usr/share/fonts`
 * Make a backup of SessionBuddy
 * Make a list of all Docker images to pull again
    - `docker images &> docker_images_manifest.txt`
