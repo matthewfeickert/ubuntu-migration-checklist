@@ -24,3 +24,13 @@
 - [vim-mode-plus](https://atom.io/packages/vim-mode-plus)
 - [spell-check](https://atom.io/packages/spell-check)
    - Get grammar and known words from [dotfiles](https://github.com/matthewfeickert/dotfiles)
+
+## FTP remote edit options
+
+- The name of server (populated from title)
+- The hostname or IP address of the server: what you would ssh to (example: `login.usatlas.org`)
+- Port: 22 or alternative if taken
+- Protocol: SFTP - SSH File Transfer Protocol
+- Logon Type: SSH Agent
+- username for authentication: Username you'd ssh with
+- Initial Directory: Path on server you should drop into
