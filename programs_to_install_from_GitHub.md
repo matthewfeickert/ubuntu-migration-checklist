@@ -6,3 +6,4 @@
 - [bat](https://github.com/sharkdp/bat)
 - [visidata](https://www.visidata.org/)
 - [GitHub CLI](https://cli.github.com/)
+- [oh my zsh](https://ohmyz.sh/)
