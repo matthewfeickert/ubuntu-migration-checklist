@@ -5,3 +5,4 @@
 - rbenv
 - bat
 - visidata
+- Git (get most uptodate)

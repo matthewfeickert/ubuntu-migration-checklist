@@ -10,4 +10,5 @@ Checklist and guide on how to migrate to a clean install of Ubuntu
    - Manually copy all files desired to a segment of the external hard drive
 * Make a list of all software to reinstall
    - Only restore files, not applications
+* Make a backup of TabBuddy
 * Make a list of all Docker images to pull again
