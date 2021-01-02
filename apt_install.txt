@@ -1,0 +1,17 @@
+clang-format
+cmake
+cowsay
+fortune
+g++
+gcc
+gfortran
+git-all
+hdf5-tools
+libboost
+lolcat
+lz4
+make
+shellcheck
+software-properties-common
+software-properties-gtk
+texlive-full
