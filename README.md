@@ -15,5 +15,12 @@ Checklist and guide on how to migrate to a clean install of Ubuntu
 * Make a backup of SessionBuddy
 * Make a list of all Docker images to pull again
    - `docker images &> docker_images_manifest.txt`
+* Backup SSH keys (optional)
+
+## Dry Run
+
+Boot into the new OS from the thumb drive with the backup hard drive connected and verify that all files can be read
+
+## After Install
 * You will probably need to comment out the entry for Chrome in `/etc/apt/sources.list.d/google.list` to avoid a conflict with `/etc/apt/sources.list.d/google-chrome.list`
    - `sed -e '/chrome/ s/^#*/# /' -i /etc/apt/sources.list.d/google.list`
