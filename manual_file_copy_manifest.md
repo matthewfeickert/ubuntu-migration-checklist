@@ -11,6 +11,8 @@
 - ~/Videos
 - ~/Zotero
 
+Additionally check for any dotfiles that were manually preserved
+
 ## Files to be ignored
 - ~/bin (will be created fresh)
 - ~/Dropbox (will be downloaded)
