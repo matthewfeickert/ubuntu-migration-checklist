@@ -7,7 +7,8 @@ Checklist and guide on how to migrate to a clean install of Ubuntu
 * Download the latest LTS release ISO of Ubuntu and make a boot thumbdrive
 * Backup entire computer on external harddrive
    - This is for an emergency restore, not a transfer
-   - Manually copy all files desired to a segment of the external hard drive
+   - Manually copy all files desired to a segment of the external hard drive (use EXT4 formatting)
+   - Use `rsync --archive <target> <destination>` for this to preserve permissions
 * Make a list of all software to reinstall
    - Only restore files, not applications
 * Backup all fonts
