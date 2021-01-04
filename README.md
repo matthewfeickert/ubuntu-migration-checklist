@@ -24,7 +24,30 @@ All dotfiles should be restored from [personal dotfiles repo](https://github.com
 
 Boot into the new OS from the thumb drive with the backup hard drive connected and verify that all files can be read
 
+## Installation Process
+
+* Intall Ubuntu **without** recieving updates over the internet to avoid installation errors
+
 ## After Install
 
-* You will probably need to comment out the entry for Chrome in `/etc/apt/sources.list.d/google.list` to avoid a conflict with `/etc/apt/sources.list.d/google-chrome.list`
+* Enable internet
+* Run
+```
+sudo apt-get update -y
+sudo apt-get upgrade -y
+```
+to update the default installed software
+* Searching the system for "Additional Drivers" open up Software & Updates and in the Additional Drivers tab update to the stable NVIDIA driver metapackage available
+   - For Ubuntu 20.04 this was `nvidia-driver-455` in January 2021 (has a note next to it of "(proprietary, tested)")
+* After updating the Nvidia driver install the Nvidia CUDA toolkit (version automatically determined from install Nvidia drivers) with
+```
+sudo apt-get update -y
+sudo apt-get install nvidia-cuda-toolkit
+```
+* Restart the computer
+* Go into Ubuntu Software and install all software in the Updates tab including all firmware updates (which will all required system restarts)
+* Verify the Nvidia X Server Settings for the graphics card and dispaly settings and save the X Configuration File out
+   - Saved under `/etc/X11/xorg.conf`
+* Reinstall all software
+* You will probably need to comment out the PPA entry for Chrome in `/etc/apt/sources.list.d/google.list` to avoid a conflict with `/etc/apt/sources.list.d/google-chrome.list`
    - `sed -e '/chrome/ s/^#*/# /' -i /etc/apt/sources.list.d/google.list`
