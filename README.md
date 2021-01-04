@@ -30,6 +30,8 @@ Boot into the new OS from the thumb drive with the backup hard drive connected a
 
 ## After Install
 
+### System Stability Checks
+
 * Enable internet
 * Run
 ```
@@ -45,9 +47,15 @@ sudo apt-get update -y
 sudo apt-get install nvidia-cuda-toolkit
 ```
 * Restart the computer
-* Go into Ubuntu Software and install all software in the Updates tab including all firmware updates (which will all required system restarts)
+* Go into Ubuntu Software and install all software in the Updates tab including all firmware updates (which will all require system restarts)
 * Verify the Nvidia X Server Settings for the graphics card and dispaly settings and save the X Configuration File out
    - Saved under `/etc/X11/xorg.conf`
+* For security reasons, avoid all SSH keys being automatically added to the default ssh-agent at system login by [removing the `gpg-keyring-daemon` from the startup applications](https://unix.stackexchange.com/questions/527693/ssh-keys-cant-be-deleted-from-agent).
+To do this search the system for "Startup Applications" and then uncheck the box next to the "GNOME Keyring: SSH Agent" entry.
+You can then manually add ssh-keys to the agent like normal.
+
+### Software Reinstallation
+
 * Reinstall all software
 * You will probably need to comment out the PPA entry for Chrome in `/etc/apt/sources.list.d/google.list` to avoid a conflict with `/etc/apt/sources.list.d/google-chrome.list`
    - `sed -e '/chrome/ s/^#*/# /' -i /etc/apt/sources.list.d/google.list`
